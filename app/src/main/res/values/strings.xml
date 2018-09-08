@@ -1,6 +1,53 @@
 <resources>
     <string name="app_name">Atlanta App</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="coke">Coke Factory</string>
+    <string name="CNN">CNN center</string>
+    <string name="Aquariaum">Georgia Aquarium</string>
+    <string name="Ponce">Ponce City Market</string>
+    <string name="Fox">Fox Theatre</string>
+    <string name="cokeloc">121 Baker St.</string>
+    <string name="cnnloc">Downtown</string>
+    <string name="aqualoc">Downtown</string>
+    <string name="foxloc">660 Peachtree St. NE</string>
+    <string name="nameAtt">Fun Places!</string>
+    <string name="nameFood">Food</string>
+    <string name="nameMuseums">Museums</string>
+    <string name="nameTour">Tours!</string>
+    <string name="Aria">Aria: New American eatery</string>
+    <string name="Mary">Mary Mac: Southern Dining</string>
+    <string name="Vortex">Vortex: Best burgers in town!</string>
+    <string name="Paolo">Paolo Gelato Italiano: Compact treat shop</string>
+    <string name="Antico">Antico Pizza: Best Pizza in 23 U.S. Cities</string>
+    <string name="ariaLoc">490 East Paces Ferry Rd</string>
+    <string name="vorLoc">Little 5 Points</string>
+    <string name="pizzaLoc">3185 Avalon Boulevard</string>
+    <string name="gelLoc">1025 Virginia Avenue</string>
+    <string name="Art">High Museum of Art</string>
+    <string name="Civil">Center for civil and human rights</string>
+    <string name="Natural">Fernbank Museum of Natural Art</string>
+    <string name="Jimmy">Jimmy Carter Library and Museum</string>
+    <string name="History">Atlanta History Museum</string>
+    <string name="artloc">1280 W Peachtree St</string>
+    <string name="civloc">100 Ivan Allen Jr Blvd</string>
+    <string name="nalloc">767 Clifton Road</string>
+    <string name="jimloc">441 Freedom Parkway</string>
+    <string name="hisloc">130 West Paces Ferry Rd.</string>
+    <string name="tourfood">Atlanta Southern Food Tour</string>
+    <string name="tourwalk">Walking Dead Big Zombie Tour</string>
+    <string name="tourcnn">CNN Atlanta Studio</string>
+    <string name="tourcar">Atlanta city tour by electric car</string>
+    <string name="tourhome">Atlanta Historical Homes"</string>
+    <string name="tourdown">Downtown</string>
+    <string name="tourwalkLoc">Castleberrry Hill in Downtown</string>
+    <string name="Tour">Tours</string>
+    <string name="ArtPlace">Museums</string>
+    <string name="FoodPlace">Food</string>
+    <string name="Attractions">Fun Places!</string>
+    <string name="attract">Attractions</string>
+    <string name="foodTitle">Food</string>
+    <string name="museumTitle">Museums</string>
+    <string name="tourTitle">Tours</string>
+
+
 </resources>

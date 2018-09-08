@@ -17,11 +17,9 @@ import java.util.ArrayList;
  */
 public class FoodFragment extends ListFragment {
 
-
     public FoodFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -30,20 +28,21 @@ public class FoodFragment extends ListFragment {
         View rootView = inflater.inflate(R.layout.word_list, container, false);
 
         final ArrayList<Atlanta> atlantas = new ArrayList<>();
-        atlantas.add(new Atlanta("aria", "Downtown", R.drawable.coke));
-        atlantas.add(new Atlanta("Mary Mac", "Downtown", R.drawable.cnn));
-        atlantas.add(new Atlanta("Vortex", "Downtown", R.drawable.coke));
-        atlantas.add(new Atlanta("Antico Pizza", "Downtown", R.drawable.electric));
-        atlantas.add(new Atlanta("Cakes and Ale", "Downtown", R.drawable.electric));
+        atlantas.add(new Atlanta(getString(R.string.Aria), getString(R.string.ariaLoc),
+                R.drawable.aria));
+        atlantas.add(new Atlanta(getString(R.string.Mary), getString(R.string.tourdown),
+                R.drawable.food));
+        atlantas.add(new Atlanta(getString(R.string.Vortex), getString(R.string.vorLoc),
+                R.drawable.vortex));
+        atlantas.add(new Atlanta(getString(R.string.Antico), getString(R.string.ariaLoc),
+                R.drawable.pizza));
+        atlantas.add(new Atlanta(getString(R.string.Paolo), getString(R.string.gelLoc),
+                R.drawable.gelato));
 
         AtlantaAdapter adapter = new AtlantaAdapter((getActivity()), atlantas, R.color.colorAccent);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
-        ListView.setAdapter(adapter);
-
+        listView.setAdapter(adapter);
         return rootView;
     }
 }
-
-
-

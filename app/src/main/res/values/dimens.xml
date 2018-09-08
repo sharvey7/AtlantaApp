@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="leftSide">120dp</dimen>
+    <dimen name="startSide">40dp</dimen>
+    <dimen name="topSide">27dp</dimen>
+    <dimen name="padding">20dp</dimen>
+</resources>

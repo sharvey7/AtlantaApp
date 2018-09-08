@@ -16,13 +16,11 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class TourFragment extends ListFragment{
-
+public class TourFragment extends ListFragment {
 
     public TourFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -31,18 +29,22 @@ public class TourFragment extends ListFragment{
         View rootView = inflater.inflate(R.layout.word_list, container, false);
 
         final ArrayList<Atlanta> atlantas = new ArrayList<>();
-        atlantas.add(new Atlanta("Atlanta's Southern Food Tour", "Downtown", R.drawable.coke));
-        atlantas.add(new Atlanta("Walking Dead Big Zombie Tour", "Downtown", R.drawable.cnn));
-        atlantas.add(new Atlanta("CNN Atlanta Studio Tour", "Downtown", R.drawable.coke));
-        atlantas.add(new Atlanta("Atlanta city tour by electric car", "Downtown", R.drawable.electric));
-        atlantas.add(new Atlanta("Atlanta Historical Homes", "Downtown", R.drawable.electric));
+        atlantas.add(new Atlanta(getString(R.string.coke), getString(R.string.tourdown),
+                R.drawable.coke));
+        atlantas.add(new Atlanta(getString(R.string.tourwalk), getString(R.string.tourdown),
+                R.drawable.walking));
+        atlantas.add(new Atlanta(getString(R.string.CNN), getString(R.string.tourdown),
+                R.drawable.cnn));
+        atlantas.add(new Atlanta(getString(R.string.tourcar), getString(R.string.tourdown),
+                R.drawable.electric));
+        atlantas.add(new Atlanta(getString(R.string.tourhome), getString(R.string.tourwalkLoc),
+                R.drawable.iman));
 
         AtlantaAdapter adapter = new AtlantaAdapter((getActivity()), atlantas, R.color.colorAccent);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
-        ListView.setAdapter(adapter);
+        listView.setAdapter(adapter);
 
         return rootView;
     }
 }
-

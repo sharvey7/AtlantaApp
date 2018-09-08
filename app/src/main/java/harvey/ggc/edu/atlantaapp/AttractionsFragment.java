@@ -17,11 +17,9 @@ import java.util.ArrayList;
  */
 public class AttractionsFragment extends ListFragment {
 
-
     public AttractionsFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -29,17 +27,17 @@ public class AttractionsFragment extends ListFragment {
         View rootView = inflater.inflate(R.layout.word_list, container, false);
 
         final ArrayList<Atlanta> atlantas = new ArrayList<>();
-        atlantas.add(new Atlanta("Coke Factory", "Downtown", R.drawable.coke));
-        atlantas.add(new Atlanta("CNN", "Downtown", R.drawable.cnn));
-        atlantas.add(new Atlanta("Piedmont Park", "Downtown", R.drawable.coke));
-        atlantas.add(new Atlanta("Ponce City Market", "Downtown", R.drawable.electric));
-        atlantas.add(new Atlanta("Fox Theatre", "Downtown", R.drawable.electric));
+        atlantas.add(new Atlanta(getString(R.string.coke), getString(R.string.cokeloc), R.drawable.coke));
+        atlantas.add(new Atlanta(getString(R.string.CNN), getString(R.string.cnnloc), R.drawable.cnn));
+        atlantas.add(new Atlanta(getString(R.string.Aquariaum), getString(R.string.aqualoc), R.drawable.aquarium));
+        atlantas.add(new Atlanta(getString(R.string.Ponce), getString(R.string.tourdown), R.drawable.ponceimg));
+        atlantas.add(new Atlanta(getString(R.string.Fox), getString(R.string.foxloc), R.drawable.fox));
 
         AtlantaAdapter adapter = new AtlantaAdapter((getActivity()), atlantas, R.color.colorAccent);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
-        ListView.setAdapter(adapter);
+        listView.setAdapter(adapter);
 
-return rootView;
+        return rootView;
     }
 }

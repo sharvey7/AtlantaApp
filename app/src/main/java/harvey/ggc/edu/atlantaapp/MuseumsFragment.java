@@ -17,11 +17,9 @@ import java.util.ArrayList;
  */
 public class MuseumsFragment extends ListFragment {
 
-
     public MuseumsFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -30,18 +28,22 @@ public class MuseumsFragment extends ListFragment {
         View rootView = inflater.inflate(R.layout.word_list, container, false);
 
         final ArrayList<Atlanta> atlantas = new ArrayList<>();
-        atlantas.add(new Atlanta("High Museum of Art", "Downtown", R.drawable.coke));
-        atlantas.add(new Atlanta("Center for civil and human rights", "Downtown", R.drawable.cnn));
-        atlantas.add(new Atlanta("Fernbank Museum of Natural Art", "Downtown", R.drawable.coke));
-        atlantas.add(new Atlanta("Jimmy Carter Library and Museum", "Downtown", R.drawable.electric));
-        atlantas.add(new Atlanta("Atlanta History Museum", "Downtown", R.drawable.electric));
+        atlantas.add(new Atlanta(getString(R.string.Art), getString(R.string.artloc),
+                R.drawable.highmuseum));
+        atlantas.add(new Atlanta(getString(R.string.Civil), getString(R.string.civloc),
+                R.drawable.newcivil));
+        atlantas.add(new Atlanta(getString(R.string.Natural), getString(R.string.nalloc),
+                R.drawable.fernbank));
+        atlantas.add(new Atlanta(getString(R.string.Jimmy), getString(R.string.jimloc),
+                R.drawable.jimmy));
+        atlantas.add(new Atlanta(getString(R.string.History), getString(R.string.hisloc),
+                R.drawable.history));
 
         AtlantaAdapter adapter = new AtlantaAdapter((getActivity()), atlantas, R.color.colorAccent);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
-        ListView.setAdapter(adapter);
+        listView.setAdapter(adapter);
 
         return rootView;
     }
 }
-

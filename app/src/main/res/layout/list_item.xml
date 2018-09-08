@@ -3,33 +3,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:drawSelectorOnTop="true"> <!--Pressed state will be shown on each list item -->
+    android:drawSelectorOnTop="true"
+    android:orientation="vertical"> <!--Pressed state will be shown on each list item -->
 
     <ImageView
+        android:id="@+id/image1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/image1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="27dp"
+        android:paddingBottom="25dp"
         />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="bottom"
-            android:id="@+id/textView2"
-            android:textStyle="bold"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#FFFF"
-            />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="top"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:id="@+id/textView1"
-            android:textColor="#FFFF"
-            tools:text="one"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="27dp"
+        android:paddingTop="20dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000"
+        android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#FFFF"
+        tools:text="one" />
 
 </RelativeLayout>
